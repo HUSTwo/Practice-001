@@ -38,6 +38,7 @@ def main():
     for m in range(1, month):
         total += get_days(year, m)
     total += day
+    print(f'今天是{year}年{month}月{day}日是{year}年')
     print(f'{year}年{month}月{day}日是{year}年的第{total}天')
 
 
