@@ -7,20 +7,10 @@ Created on Sun Aug  9 15:15:59 2020
 from datetime import datetime
 
 def is_leap(year):
-    """
-    判断是否是闰年
-    :param year: 年份
-    :return: 布尔值
-    """
-    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+    isLeap = year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+    return isLeap
 
 def get_days(year, month):
-    """
-    获取这一年中这个月份的天数
-    :param year: 年份
-    :param month: 月份
-    :return: 该月的天数
-    """
     if month in [1, 3, 5, 7, 8, 10, 12]:
         return 31
     elif month == 2:
